@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/rootView">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Text"
+        android:lines="1"
+        android:inputType="textPersonName"
+        android:textSize="30sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="store_in_sharedPreferences"
+        android:text="Store In SharedPreferences"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="store_in_internal_cache"
+        android:text="Store In Internal Cache"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="store_in_external_cache"
+        android:text="Store In External Cache"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="store_in_internal_storage"
+        android:text="Store In Internal Storage"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="store_in_external_storage_private"
+        android:text="Store In External Storage Private"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="store_in_external_storage_public"
+        android:text="Store In External Storage Public"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="go_to_load_text_data_activity"
+        android:text="---->"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
